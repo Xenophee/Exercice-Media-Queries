@@ -1,0 +1,162 @@
+/* Général  */
+
+body {
+    margin : 0;
+    font-family: 'Heebo', sans-serif;
+    font-size: x-large;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background-color: beige;
+}
+
+article {
+    background-color: brown;
+    text-align: center;
+    padding: 1%;
+    margin-top: 2%
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: xx-large;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+fieldset {
+    width: 85%;
+    margin-bottom: 5%;
+    border-color: brown;
+}
+
+legend {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+input[type=text], input[type=email] {
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 95%;
+    font-size: x-large;
+    border-color: brown;
+    
+}
+
+#validation {
+    width: 85%;
+    margin: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color:darkorange;
+    font-size: x-large;
+    border : 0;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    background-color: burlywood ;
+    padding: 2%;
+}
+
+ul {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    text-align: center;
+    list-style-type: none;
+}
+
+
+
+
+
+
+/* Orientation de l'image  */
+
+@media (orientation: landscape) {
+    header {
+        background-image: url(../IMG/coworking-paysage.jpg);
+        background-size: cover;
+    }
+}
+
+
+@media (orientation: portrait) {
+    header {
+        background-image: url(../IMG/coworking-portrait.jpg);
+        background-size: cover;
+    }
+}
+
+
+
+/* Dimensions spécifiques  */
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 50vh;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    article {
+        width: 42%;
+        margin: 2%;
+        margin-top: 5%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    fieldset {
+        width: 35%;
+    }
+
+    #validation {
+        width: 30%;
+        padding: 2%;
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+    ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+
