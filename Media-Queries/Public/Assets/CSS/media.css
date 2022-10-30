@@ -1,0 +1,136 @@
+/* Orientation de l'image  */
+
+@media (orientation: landscape) {
+    header {
+        background-image: url(../IMG/coworking-paysage.jpg);
+        background-size: cover;
+    }
+}
+
+
+@media (orientation: portrait) {
+    header {
+        background-image: url(../IMG/coworking-portrait.jpg);
+        background-size: cover;
+    }
+}
+
+
+
+/* Dimensions spécifiques  */
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+    
+
+    input[type=text], input[type=email] {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    img {
+        width: 20%;
+    }
+
+    footer {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    ul li {
+        margin-bottom: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    img {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    header {
+        height: 50vh;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    article {
+        width: 40%;
+        margin: 1%;
+        margin-top: 5%;
+    }
+
+    #contact {
+        width: 70%;
+        padding-top: 3%;
+        padding-bottom: 4%; 
+    }
+
+    #contact div h2 {
+        margin: 2rem;
+    }
+
+    #contact p {
+        font-weight: bold;
+        font-size: 0.5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    fieldset {
+        width: 35%;
+    }
+
+    label {
+        font-size: 0.5rem;
+    }
+
+    input[type=text], input[type=email] {
+        font-size: 0.5rem;
+    }
+
+    #validation {
+        width: 20%;
+        padding: 1%;
+        margin: 0;
+        font-size: 0.7rem;
+    }
+
+    img {
+        width: 25%;
+    }
+
+    footer {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-top: 1%;
+    }
+}
